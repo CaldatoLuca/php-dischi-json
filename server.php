@@ -6,36 +6,48 @@ $disks = [
         "artista" => "The Beatles",
         "anno" => 1969,
         "genere" => "Rock",
-        "etichetta" => "Apple Records"
+        "src" => "https://picsum.photos/200/300"
+
     ],
     [
         "titolo" => "Thriller",
         "artista" => "Michael Jackson",
         "anno" => 1982,
         "genere" => "Pop",
-        "etichetta" => "Epic"
+        "src" => "https://picsum.photos/200/300"
     ],
     [
         "titolo" => "The Dark Side of the Moon",
         "artista" => "Pink Floyd",
         "anno" => 1973,
         "genere" => "Progressive Rock",
-        "etichetta" => "Harvest"
+        "src" => "https://picsum.photos/200/300"
+
     ],
     [
         "titolo" => "Rumours",
         "artista" => "Fleetwood Mac",
         "anno" => 1977,
         "genere" => "Soft Rock",
-        "etichetta" => "Warner Bros."
+        "src" => "https://picsum.photos/200/300"
+
     ],
     [
         "titolo" => "Back in Black",
         "artista" => "AC/DC",
         "anno" => 1980,
         "genere" => "Hard Rock",
-        "etichetta" => "Atlantic"
-    ]
+        "src" => "https://picsum.photos/200/300"
+
+    ],
+    [
+        "titolo" => "A Night at the Opera",
+        "artista" => "Queen",
+        "anno" => 1975,
+        "genere" => "Rock",
+        "src" => "https://picsum.photos/200/300"
+    ],
+
 ];
 
 header('Content-Type: application/json');

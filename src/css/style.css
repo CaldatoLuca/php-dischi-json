@@ -1,3 +1,11 @@
 [v-cloak] {
   display: none;
 }
+.-lc-artist,
+.-lc-disk-title {
+  font-family: "Roboto Slab", serif;
+}
+
+.-lc-disk-title {
+  cursor: pointer;
+}

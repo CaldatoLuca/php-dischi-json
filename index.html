@@ -12,14 +12,74 @@
       crossorigin="anonymous"
     />
     <!--/bootstrap-->
+    <!-- roboto slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- roboto slab/ -->
     <!-- my css -->
     <link rel="stylesheet" href="src/css/style.css" />
     <!-- my css -->
   </head>
 
-  <body>
+  <body class="bg-dark py-5">
     <div id="app">
-      <div v-for="disk in disks">{{ disk.titolo }}</div>
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <!-- titolo del sito -->
+        <header class="text-center mb-4 text-light">
+          <h1>Disks PHP</h1>
+          <h2>An introduction to Back-end development</h2>
+          <div class="text-warning">
+            Click on the Song Title to view the Description
+          </div>
+        </header>
+
+        <!-- main del sito -->
+        <main class="d-flex justify-content-between w-100">
+          <!-- lista dei dischi -->
+          <section
+            class="-lc-list col-6 border-s border border-light text-light p-3 rounded-2"
+          >
+            <!-- titolo sezione -->
+            <div class="-lc-list-title text-center mb-5">
+              <h2>List of disks</h2>
+            </div>
+
+            <!-- lista  -->
+            <div class="-lc-list-disk row">
+              <div v-for="disk in disks" class="-lc-list-block col-4">
+                <div class="-lc-img p-5 bg-black bg-opacity-25 mb-3 rounded-2">
+                  <img
+                    :src="disk.src"
+                    :alt="disk.titolo"
+                    class="img-fluid w-100"
+                  />
+                </div>
+                <div class="-lc-description text-center mb-3 px-2">
+                  <h5 class="-lc-disk-title">{{ disk.titolo }}</h5>
+                  <h6 class="-lc-artist fw-bold">{{ disk.artista }}</h6>
+                  <div>{{ disk.anno }}</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- informazioni sui dischi -->
+          <section
+            class="-lc-display-info col-5 border border-light text-light p-3 rounded-2"
+          >
+            <!-- titolo sezione -->
+            <div class="-lc-display-info-title text-center">
+              <h2>Description</h2>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
 
     <!-- vue -->
