@@ -12,20 +12,24 @@
       crossorigin="anonymous"
     />
     <!--/bootstrap-->
+    <!-- my css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- my css -->
   </head>
 
   <body>
     <div id="app">
-      <p v-for="disk in disks">ciao</p>
+      <div v-for="disk in disks">{{ disk.titolo }}</div>
     </div>
 
-    <!-- file js -->
-    <script src="src/js/main.js"></script>
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- /vue -->
     <!-- axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- /axios -->
+    <!-- my js -->
+    <script src="src/js/main.js"></script>
+    <!-- my js -->
   </body>
 </html>

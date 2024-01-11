@@ -5,13 +5,13 @@ const { createApp } = Vue;
 const vueConfig = {
   data() {
     return {
-      disks: ["ciao", "io", "sono"],
+      disks: [],
     };
   },
   methods: {
     callDisks() {
       axios.get("server.php").then((response) => {
-        console.log(response);
+        this.disks = response.data;
       });
     },
   },
