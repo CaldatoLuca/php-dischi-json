@@ -6,6 +6,7 @@ const vueConfig = {
   data() {
     return {
       disks: [],
+      description: "Work in progress..",
     };
   },
   methods: {

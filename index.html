@@ -34,9 +34,9 @@
         <header class="text-center mb-4 text-light">
           <h1>Disks PHP</h1>
           <h2>An introduction to Back-end development</h2>
-          <div class="text-warning">
+          <!-- <div class="text-warning">
             Click on the Song Title to view the Description
-          </div>
+          </div> -->
         </header>
 
         <!-- main del sito -->
@@ -61,7 +61,9 @@
                   />
                 </div>
                 <div class="-lc-description text-center mb-3 px-2">
-                  <h5 class="-lc-disk-title">{{ disk.titolo }}</h5>
+                  <h5 class="-lc-disk-title" @click="showDescription()">
+                    {{ disk.titolo }}
+                  </h5>
                   <h6 class="-lc-artist fw-bold">{{ disk.artista }}</h6>
                   <div>{{ disk.anno }}</div>
                 </div>
@@ -76,6 +78,7 @@
             <!-- titolo sezione -->
             <div class="-lc-display-info-title text-center">
               <h2>Description</h2>
+              <div>{{ description }}</div>
             </div>
           </section>
         </main>
