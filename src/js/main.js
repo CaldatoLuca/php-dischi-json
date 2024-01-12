@@ -18,6 +18,7 @@ const vueConfig = {
       });
     },
     //chiamo disco con indice del click, do parametro index
+    //funziona sia per index che per id (passo valore divero nell' html)
     showDescription(index) {
       axios.get(this.apiUrl, { params: { index: index } }).then((response) => {
         this.description = response.data.descrizione;
