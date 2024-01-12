@@ -2,10 +2,10 @@
   display: none;
 }
 .-lc-artist,
-.-lc-disk-title {
+.-lc-disc-title {
   font-family: "Roboto Slab", serif;
 }
 
-.-lc-disk-title {
+.-lc-disc-title {
   cursor: pointer;
 }

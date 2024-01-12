@@ -32,11 +32,11 @@
       >
         <!-- titolo del sito -->
         <header class="text-center mb-4 text-light">
-          <h1>Disks PHP</h1>
+          <h1>Discs PHP</h1>
           <h2>An introduction to Back-end development</h2>
-          <!-- <div class="text-warning">
+          <div class="text-warning">
             Click on the Song Title to view the Description
-          </div> -->
+          </div>
         </header>
 
         <!-- main del sito -->
@@ -47,25 +47,25 @@
           >
             <!-- titolo sezione -->
             <div class="-lc-list-title text-center mb-5">
-              <h2>List of disks</h2>
+              <h2>List of discs</h2>
             </div>
 
             <!-- lista  -->
-            <div class="-lc-list-disk row">
-              <div v-for="disk in disks" class="-lc-list-block col-4">
+            <div class="-lc-list-disc row">
+              <div v-for="(disc, index) in discs" class="-lc-list-block col-4">
                 <div class="-lc-img p-5 bg-black bg-opacity-25 mb-3 rounded-2">
                   <img
-                    :src="disk.src"
-                    :alt="disk.titolo"
+                    :src="disc.src"
+                    :alt="disc.titolo"
                     class="img-fluid w-100"
                   />
                 </div>
                 <div class="-lc-description text-center mb-3 px-2">
-                  <h5 class="-lc-disk-title" @click="showDescription()">
-                    {{ disk.titolo }}
+                  <h5 class="-lc-disc-title" @click="showDescription(index)">
+                    {{ disc.titolo }}
                   </h5>
-                  <h6 class="-lc-artist fw-bold">{{ disk.artista }}</h6>
-                  <div>{{ disk.anno }}</div>
+                  <h6 class="-lc-artist fw-bold">{{ disc.artista }}</h6>
+                  <div>{{ disc.anno }}</div>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@
             class="-lc-display-info col-5 border border-light text-light p-3 rounded-2"
           >
             <!-- titolo sezione -->
-            <div class="-lc-display-info-title text-center">
+            <div class="-lc-display-info-title text-center mb-5">
               <h2>Description</h2>
               <div>{{ description }}</div>
             </div>

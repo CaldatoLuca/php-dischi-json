@@ -5,19 +5,27 @@ const { createApp } = Vue;
 const vueConfig = {
   data() {
     return {
-      disks: [],
-      description: "Work in progress..",
+      discs: [],
+      description: "...",
+      apiUrl: "server.php",
     };
   },
   methods: {
-    callDisks() {
-      axios.get("server.php").then((response) => {
-        this.disks = response.data;
+    //chiamo tutti i dischi
+    callDiscs() {
+      axios.get(this.apiUrl).then((response) => {
+        this.discs = response.data;
+      });
+    },
+    //chiamo disco con indice del click, do parametro index
+    showDescription(index) {
+      axios.get(this.apiUrl, { params: { index: index } }).then((response) => {
+        this.description = response.data.descrizione;
       });
     },
   },
   created() {
-    this.callDisks();
+    this.callDiscs();
   },
 };
 

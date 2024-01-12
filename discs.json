@@ -1,0 +1,50 @@
+[
+  {
+    "titolo": "Abbey Road",
+    "artista": "The Beatles",
+    "anno": 1969,
+    "genere": "Rock",
+    "descrizione": "Abbey Road è l'ultimo album registrato dai leggendari Beatles. Con brani iconici come 'Come Together' e la famosa suite di medley sulla seconda facciata, l'album rappresenta un capolavoro intramontabile del rock.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "titolo": "Thriller",
+    "artista": "Michael Jackson",
+    "anno": 1982,
+    "genere": "Pop",
+    "descrizione": "Thriller è uno degli album più venduti di tutti i tempi. Michael Jackson ha ridefinito il pop con questo album, che include successi indimenticabili come 'Billie Jean' e la traccia titolare 'Thriller'.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "titolo": "The Dark Side of the Moon",
+    "artista": "Pink Floyd",
+    "anno": 1973,
+    "genere": "Progressive Rock",
+    "descrizione": "The Dark Side of the Moon è un viaggio sonoro straordinario. I Pink Floyd mescolano abilmente musica e testi in un'opera che esplora temi come la vita, la morte e la follia, creando un'esperienza di ascolto unica nel suo genere.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "titolo": "Rumours",
+    "artista": "Fleetwood Mac",
+    "anno": 1977,
+    "genere": "Soft Rock",
+    "descrizione": "Rumours è un classico degli anni '70, famoso per le dinamiche complesse della band durante le registrazioni. Con canzoni come 'Go Your Own Way' e 'Dreams', l'album cattura emozioni e conflitti personali in modo straordinario.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "titolo": "Back in Black",
+    "artista": "AC/DC",
+    "anno": 1980,
+    "genere": "Hard Rock",
+    "descrizione": "Back in Black è un tributo epico al defunto cantante Bon Scott. Con l'entrata di Brian Johnson, gli AC/DC hanno creato un album che è diventato un'icona dell'hard rock, con brani come 'Back in Black' e 'You Shook Me All Night Long'.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "titolo": "A Night at the Opera",
+    "artista": "Queen",
+    "anno": 1975,
+    "genere": "Rock",
+    "descrizione": "A Night at the Opera è un capolavoro eclettico dei Queen. Con la celebre 'Bohemian Rhapsody' e una varietà di stili musicali, l'album dimostra la versatilità e la genialità della band guidata da Freddie Mercury.",
+    "src": "https://picsum.photos/200/300"
+  }
+]
