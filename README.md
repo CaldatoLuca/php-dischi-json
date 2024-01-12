@@ -10,15 +10,17 @@ Creo l' array in un file `.json`
 
 Dentro il mio 'server' (server.php) eseguo i seguenti comandi:
 
-````php
+```php
 //leggo il file disks.json e lo salvo in database
 
+$database = file_get_contents(__DIR__ . '/discs.json');
+```
 
 ```php
 //lo trasfromo in php (oggi non serve, solo in caso di operazioni da fare in php)
 
 $disks = json_decode($database);
-````
+```
 
 ```php
 // specifico che le informazioni passate sono di tipo json e trasfromo l' array da php a json
