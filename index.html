@@ -32,11 +32,84 @@
       >
         <!-- titolo del sito -->
         <header class="text-center mb-4 text-light">
+          <!-- titolo -->
           <h1>Discs PHP</h1>
           <h2>An introduction to Back-end development</h2>
-          <div class="text-warning">
+
+          <!-- spiegazione -->
+          <div class="text-warning mb-4">
             Click on the Song Title to view the Description
           </div>
+
+          <!-- form -->
+          <form
+            @submit.prevent="addDisk"
+            class="d-flex flex-wrap justify-content-between"
+          >
+            <!-- titolo -->
+            <div class="mb-3">
+              <label for="disc-title" class="form-label">Insert Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="disc-title"
+                v-model="titolo"
+              />
+            </div>
+
+            <!-- artista -->
+            <div class="mb-3">
+              <label for="disc-artist" class="form-label"
+                >Insert Artist or Group</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="disc-artist"
+                v-model="artista"
+              />
+            </div>
+
+            <!-- anno -->
+            <div class="mb-3">
+              <label for="disc-year" class="form-label"
+                >Insert Year of release</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="disc-year"
+                v-model="anno"
+              />
+            </div>
+
+            <!-- anno -->
+            <div class="mb-3">
+              <label for="disc-genre" class="form-label"
+                >Insert Disk Genre</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="disc-genre"
+                v-model="genere"
+              />
+            </div>
+
+            <!-- genere -->
+            <div class="form-floating w-100 d-flex justify-content-center mb-3">
+              <label for="disc-description" class="d-none">Comments</label>
+              <textarea
+                class="form-control w-50"
+                id="disc-description"
+                v-model="descrizione"
+              ></textarea>
+            </div>
+
+            <div class="w-100">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </header>
 
         <!-- main del sito -->

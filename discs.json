@@ -5,7 +5,7 @@
     "artista": "The Beatles",
     "anno": 1969,
     "genere": "Rock",
-    "descrizione": "Abbey Road è l'ultimo album registrato dai leggendari Beatles. Con brani iconici come 'Come Together' e la famosa suite di medley sulla seconda facciata, l'album rappresenta un capolavoro intramontabile del rock.",
+    "descrizione": "Abbey Road \u00e8 l'ultimo album registrato dai leggendari Beatles. Con brani iconici come 'Come Together' e la famosa suite di medley sulla seconda facciata, l'album rappresenta un capolavoro intramontabile del rock.",
     "src": "https://picsum.photos/200/300"
   },
   {
@@ -14,7 +14,7 @@
     "artista": "Michael Jackson",
     "anno": 1982,
     "genere": "Pop",
-    "descrizione": "Thriller è uno degli album più venduti di tutti i tempi. Michael Jackson ha ridefinito il pop con questo album, che include successi indimenticabili come 'Billie Jean' e la traccia titolare 'Thriller'.",
+    "descrizione": "Thriller \u00e8 uno degli album pi\u00f9 venduti di tutti i tempi. Michael Jackson ha ridefinito il pop con questo album, che include successi indimenticabili come 'Billie Jean' e la traccia titolare 'Thriller'.",
     "src": "https://picsum.photos/200/300"
   },
   {
@@ -23,7 +23,7 @@
     "artista": "Pink Floyd",
     "anno": 1973,
     "genere": "Progressive Rock",
-    "descrizione": "The Dark Side of the Moon è un viaggio sonoro straordinario. I Pink Floyd mescolano abilmente musica e testi in un'opera che esplora temi come la vita, la morte e la follia, creando un'esperienza di ascolto unica nel suo genere.",
+    "descrizione": "The Dark Side of the Moon \u00e8 un viaggio sonoro straordinario. I Pink Floyd mescolano abilmente musica e testi in un'opera che esplora temi come la vita, la morte e la follia, creando un'esperienza di ascolto unica nel suo genere.",
     "src": "https://picsum.photos/200/300"
   },
   {
@@ -32,7 +32,7 @@
     "artista": "Fleetwood Mac",
     "anno": 1977,
     "genere": "Soft Rock",
-    "descrizione": "Rumours è un classico degli anni '70, famoso per le dinamiche complesse della band durante le registrazioni. Con canzoni come 'Go Your Own Way' e 'Dreams', l'album cattura emozioni e conflitti personali in modo straordinario.",
+    "descrizione": "Rumours \u00e8 un classico degli anni '70, famoso per le dinamiche complesse della band durante le registrazioni. Con canzoni come 'Go Your Own Way' e 'Dreams', l'album cattura emozioni e conflitti personali in modo straordinario.",
     "src": "https://picsum.photos/200/300"
   },
   {
@@ -41,7 +41,7 @@
     "artista": "AC/DC",
     "anno": 1980,
     "genere": "Hard Rock",
-    "descrizione": "Back in Black è un tributo epico al defunto cantante Bon Scott. Con l'entrata di Brian Johnson, gli AC/DC hanno creato un album che è diventato un'icona dell'hard rock, con brani come 'Back in Black' e 'You Shook Me All Night Long'.",
+    "descrizione": "Back in Black \u00e8 un tributo epico al defunto cantante Bon Scott. Con l'entrata di Brian Johnson, gli AC/DC hanno creato un album che \u00e8 diventato un'icona dell'hard rock, con brani come 'Back in Black' e 'You Shook Me All Night Long'.",
     "src": "https://picsum.photos/200/300"
   },
   {
@@ -50,7 +50,16 @@
     "artista": "Queen",
     "anno": 1975,
     "genere": "Rock",
-    "descrizione": "A Night at the Opera è un capolavoro eclettico dei Queen. Con la celebre 'Bohemian Rhapsody' e una varietà di stili musicali, l'album dimostra la versatilità e la genialità della band guidata da Freddie Mercury.",
+    "descrizione": "A Night at the Opera \u00e8 un capolavoro eclettico dei Queen. Con la celebre 'Bohemian Rhapsody' e una variet\u00e0 di stili musicali, l'album dimostra la versatilit\u00e0 e la genialit\u00e0 della band guidata da Freddie Mercury.",
+    "src": "https://picsum.photos/200/300"
+  },
+  {
+    "id": 187,
+    "titolo": "Comfortably numb",
+    "artista": "Pink Floyd",
+    "anno": "1979",
+    "genere": "Rock",
+    "descrizione": " \"Comfortably Numb\" \u00e8 una canzone dei Pink Floyd, scritta da Roger Waters e David Gilmour. Rilasciata nel 1979 nell'album \"The Wall\", racconta la storia di una rockstar emotivamente distante e intorpidita. La canzone riflette sull'alienazione e l'isolamento legati alla fama, con il protagonista che viene somministrato farmaci per intorpidire il dolore prima di salire sul palco. Il brano \u00e8 famoso per i suoi soli di chitarra iconici, in particolare quello di David Gilmour. \"Comfortably Numb\" \u00e8 considerata una delle pietre miliari della musica rock.",
     "src": "https://picsum.photos/200/300"
   }
 ]
