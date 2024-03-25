@@ -2,10 +2,6 @@
 
 PHP Discs è un programma sviluppato con HTML, JavaScript, CSS e PHP. Il suo obiettivo è mostrare a schermo una lista di dischi di vari autori e visualizzarne la descrizione se viene premuto su uno di essi. L'applicativo offre inoltre la possibilità di aggiungere un disco a piacimento, inserendo titolo, gruppo, anno di rilascio, genere e descrizione.
 
-## Descrizione
-
-PHP Discs è un'applicazione web progettata per mostrare una collezione di dischi di diversi autori. Gli utenti possono sfogliare l'elenco dei dischi e visualizzarne i dettagli cliccando su di essi. Inoltre, gli utenti hanno la possibilità di aggiungere nuovi dischi alla collezione, fornendo informazioni come titolo, autore, anno di rilascio, genere e descrizione.
-
 ## Funzionalità
 
 - Visualizza una lista di dischi con dettagli come titolo, autore, anno di rilascio e genere.
