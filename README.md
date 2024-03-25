@@ -1,86 +1,37 @@
-# PHP Disks
+# PHP Discs
 
-Creare una web-app che permetta di leggere una lista di dischi presente nel nostro server.
+PHP Discs è un programma sviluppato con HTML, JavaScript, CSS e PHP. Il suo obiettivo è mostrare a schermo una lista di dischi di vari autori e visualizzarne la descrizione se viene premuto su uno di essi. L'applicativo offre inoltre la possibilità di aggiungere un disco a piacimento, inserendo titolo, gruppo, anno di rilascio, genere e descrizione.
 
-## Svolgimento
+## Descrizione
 
-### Back-end
+PHP Discs è un'applicazione web progettata per mostrare una collezione di dischi di diversi autori. Gli utenti possono sfogliare l'elenco dei dischi e visualizzarne i dettagli cliccando su di essi. Inoltre, gli utenti hanno la possibilità di aggiungere nuovi dischi alla collezione, fornendo informazioni come titolo, autore, anno di rilascio, genere e descrizione.
 
-Creo l' array in un file `.json`
+## Funzionalità
 
-Dentro il mio 'server' (server.php) eseguo i seguenti comandi:
+- Visualizza una lista di dischi con dettagli come titolo, autore, anno di rilascio e genere.
+- Visualizza le descrizioni dei dischi cliccando sul rispettivo disco.
+- Aggiunge nuovi dischi alla collezione fornendo titolo, autore, anno di rilascio, genere e descrizione.
 
-```php
-//leggo il file disks.json e lo salvo in database
+## Utilizzo
 
-$database = file_get_contents(__DIR__ . '/discs.json');
-```
+Per utilizzare PHP Discs, segui questi passaggi:
 
-```php
-//lo trasfromo in php per poterci fare operazioni
+1. Apri l'applicazione in un browser web.
+2. Sfoglia l'elenco dei dischi visualizzati sullo schermo.
+3. Clicca su un disco per visualizzarne la descrizione.
+4. Per aggiungere un nuovo disco, vai alla sezione "Aggiungi Disco" dell'applicazione.
+5. Inserisci i dettagli del nuovo disco, inclusi titolo, autore, anno di rilascio, genere e descrizione.
+6. Invia il modulo per aggiungere il disco alla collezione.
 
-$disks = json_decode($database);
-```
+## Installazione
 
-Creo la logica dietro la visualizzazione della descrizione al click sul disco
+Per installare PHP Discs sul tuo computer locale, segui questi passaggi:
 
-Metodo per indice
-
-```php
-//uso isset e non !empty per evitare il caso in cui indice = 0 restituisca false (false è 0)
-if (isset($_GET['index']) && $_GET['index'] !== '') {
-    //salvo il valore in GET in una variabile index
-    $index = $_GET['index'];
-
-    //assegno a una variabile l' elemento dell' indice
-    $current_disk = $discs[$index];
-
-    $result = $current_disk;
-}
-```
-
-Metodo per id
-
-```php
-if (isset($_GET['index']) && $_GET['index'] !== '') {
-
-    $index = $_GET['index'];
-
-    $element_position = array_search($index, array_column($result, 'id'));
-
-    if ($element_position !== false) {
-        $result = $discs[$element_position];
-    }
-}
-```
-
-```php
-// specifico che le informazioni passate sono di tipo json e trasfromo l' array da php a json
-
-header('Content-Type: application/json');
-echo json_encode($result);
-```
-
-Queste operazioni mi permettono di richiamare, tramite 'axios', l' array nel mio file main.js. Andando poi a utilizzare i dati come sempre fatto.
-
-### Front-end
-
-Così come per tutti gli esercizi svolti finora effettuo una chiamata e salvo la `response.data` in un array, che utilizzerò per mostrare i dati in pagine tramite v-for e interpolazione Vue.
-
-Creo un metodo per fare una chiamata con parametro index (che corrisponde all' indice o all' id a seconda della logica)
-
-```js
-    showDescription(index) {
-      axios.get(this.apiUrl, { params: { index: index } }).then((response) => {
-        this.description = response.data.descrizione;
-      });
-    },
-```
-
-Quello che cambia è cosa passare alla funzione quando la richiamo (index o disc.id)
+1. Clona il repository sul tuo computer locale.
+2. Assicurati di avere PHP installato sul tuo sistema.
+3. Posiziona i file nella directory del server web.
+4. Accedi all'applicazione attraverso il tuo browser web.
 
 ## Conclusioni
 
-Ho usato postman per poter vedere che chiamata stavo facendo e per debuggare
-
-Ho voluto chaimare il file principale index.html e non index.php per separare maggiormente la parte back-end da quella front-end
+PHP Discs fornisce un modo semplice e intuitivo per gestire e sfogliare una collezione di dischi. Che tu voglia esplorare i dischi esistenti o aggiungerne di nuovi, PHP Discs offre una piattaforma conveniente per farlo. Goditi la scoperta e la condivisione della tua musica preferita con PHP Discs!
